@@ -1,0 +1,14 @@
+﻿@model IEnumerable<string>
+    @*this is the same type (IEnumerable<string>) as our actual object*@
+@{
+    ViewBag.Title = "Index";
+}
+ 
+<h2>Index</h2> @*Must be called "Index" b/c method in FizzBuzz controller is "public ActionResult Index()"*@
+
+<ul>
+@foreach (var number in Model)
+{
+    <li>@number</li>
+}
+</ul>

@@ -17,6 +17,7 @@ namespace FizzBuzzMvc
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                //action name always need to correspond to method name in controller view
             );
         }
     }
